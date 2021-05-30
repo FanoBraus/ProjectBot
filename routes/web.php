@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/belongstomany', [\App\Http\Controllers\UserController::class, 'test']);
+Route::get('/hasone', [\App\Http\Controllers\UserController::class, 'test2']); 
